@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-sso-auth-weibo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "NodeBB Weibo SSO",
   "main": "library.js",
   "repository": {
