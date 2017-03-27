@@ -39,9 +39,9 @@
 	OAuth.getStrategy = function (strategies, callback) {
 		meta.settings.get(constants.plugin_name, function (err, settings) {
 			OAuth.settings = settings;
-			if (!err && settings['key'] && settings['secret']) {
+			if (!err && settings['id'] && settings['secret']) {
 				passport.use(new passportWeibo({
-					clientID: settings['key'],
+					clientID: settings['id'],
 					clientSecret: settings['secret'],
 					callbackURL: nconf.get('url') + '/auth/'+constants.name+'/callback',
 					passReqToCallback: true
